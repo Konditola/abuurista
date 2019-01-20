@@ -23,7 +23,7 @@ class DataPreprocessor:
         print(self.dataset.iloc[:, : -1].isnull().apply(lambda x: x.sum() / self.dataset.shape[0], axis=0))
 
 
-    def showDataCompletion(self):
+    def ]showDataCompletion(self):
         mn.matrix(self.dataset)
         mn.heatmap(self.dataset)
         mn.dendrogram(self.dataset)
